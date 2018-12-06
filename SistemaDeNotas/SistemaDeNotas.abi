@@ -1,0 +1,178 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "padron",
+				"type": "uint256"
+			},
+			{
+				"name": "nota",
+				"type": "uint256"
+			}
+		],
+		"name": "calificarAlumno",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "aceptarNota",
+		"outputs": [
+			{
+				"name": "notaFinal",
+				"type": "uint256"
+			},
+			{
+				"name": "notaIndividual",
+				"type": "uint256"
+			},
+			{
+				"name": "notaGrupal",
+				"type": "uint256"
+			},
+			{
+				"name": "notaContenido",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "grupoNum",
+				"type": "uint256"
+			},
+			{
+				"name": "nota",
+				"type": "uint256"
+			}
+		],
+		"name": "calificarGrupo",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "nombre",
+				"type": "string"
+			},
+			{
+				"name": "padron",
+				"type": "uint256"
+			}
+		],
+		"name": "registrarAlumno",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "verDireccionMoneda",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "obtenerInformacion",
+		"outputs": [
+			{
+				"name": "nombre",
+				"type": "string"
+			},
+			{
+				"name": "padron",
+				"type": "uint256"
+			},
+			{
+				"name": "grupo",
+				"type": "uint256"
+			},
+			{
+				"name": "nota",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "grupoNum",
+				"type": "uint256"
+			},
+			{
+				"name": "nota",
+				"type": "uint256"
+			}
+		],
+		"name": "calificarContenido",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "padron",
+				"type": "uint256"
+			},
+			{
+				"name": "numeroDeGrupo",
+				"type": "uint256"
+			}
+		],
+		"name": "agregarAlGrupo",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "verDireccionContrato",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	}
+]

@@ -552,7 +552,7 @@ De esta forma se genera una hoja de ruta para que los validadores ejecuten los c
 
 ## Comparacion de las EOS
 
-EOS es le rival por defecto de Ethereum, la plataforma sobre la cual corren los contratos desarrollados en Solidity, es decir EOS es una plataforma, no un lenguaje, sobre la cual corren contratos los cuales son escritos en C++ o cualquier otro "WebAssembly language". Es decir que si queremos comparar con EOS, lo que debemos comparar es Ethereum y no Solidity. La diferencia entre estas dos plataformas se encuentra en como cada una de ellas encara el trilema de la escalabilidad. 
+EOS es le rival por defecto de Ethereum, la plataforma sobre la cual corren los contratos desarrollados en Solidity, es decir EOS es una plataforma, no un lenguaje, sobre la cual corren contratos los cuales son escritos en C++ o cualquier otro "WebAssembly language". Es decir que si queremos comparar con EOS, lo que debemos comparar es Ethereum y no Solidity. La diferencia entre estas dos plataformas se encuentra en como cada una de ellas encara el trilema de la escalabilidad.
 
 Este trilema es sobre la seguridad, la descentralizacion y la escalabilidad. Y en estas dos ultimas partes es donde yacen las diferencias, mientras que Ethereum pone por sobre todas las cosas la descentralizacion, EOS favorece la escalabilidad.
 
@@ -585,6 +585,16 @@ La etherum virtual machine se encuentra completamente aislada lo que significa q
 - ### tx
 
   Contiene informacion de la transaccion, por ejemplo tx.gasprice es el precio en gas de la transaccion.
+
+## Estadisticas
+
+  - En 2013 Ethereum fue descripta por primera vez con la meta de desarrollar aplicaciones descentralizadas
+
+  - En 2016 ethereum podia procesar 25 trasaccion por segundo lo que es muy poco en contra posicion con los 45 mil pagos por segundo que maneja visa por ejemplo.
+
+  - En febrero de 2018 habia 27 mil nodos en la red principal de Ethereum
+
+  - El precio de 1 Ether es aproximadamente 200 dolares
 
 Faltantes:
 - compilado/interpretado:
