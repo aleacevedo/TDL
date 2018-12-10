@@ -44,14 +44,21 @@ contract SistemaDeNotas is owned{
 
     address profesor;
     address nota;
+    
+    string nombreMoneda;
+    string simboloMoneda;
 
-    constructor () public{
+    constructor (string nombreMateria, string simboloMateria) public{
         profesor = msg.sender;
-        nota = address(new Coin(100000, "TDLCoin", "TDL")); 
+        nombreMoneda = nombreMateria;
+        simboloMoneda = simboloMateria;
+        nota = address(new Coin(100000, nombreMoneda, nombreMateria)); 
     }
     
-    function verDireccionMoneda() view returns(address){
-        return nota;
+    function verInformacionMoneda() view returns(address direccion, string simbolo, int precision){
+        direccion = nota;
+        simbolo = simboloMoneda;
+        precision = 0;
     }
     
     function verDireccionContrato() view returns(address){
@@ -72,7 +79,6 @@ contract SistemaDeNotas is owned{
     }
 
     function obtenerInformacion() public constant returns (string nombre, uint256 padron, uint256 grupo, uint256 nota){
-        // Aca puede ir un memory
         Alumno memory alumnoActual = alumnos[registros[msg.sender]];
         nombre = alumnoActual.nombre;
         padron = alumnoActual.padron;

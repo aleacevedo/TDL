@@ -1,92 +1,12 @@
 [
 	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "padron",
-				"type": "uint256"
-			},
-			{
-				"name": "nota",
-				"type": "uint256"
-			}
-		],
-		"name": "calificarAlumno",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
-		"name": "aceptarNota",
-		"outputs": [
-			{
-				"name": "notaFinal",
-				"type": "uint256"
-			},
-			{
-				"name": "notaIndividual",
-				"type": "uint256"
-			},
-			{
-				"name": "notaGrupal",
-				"type": "uint256"
-			},
-			{
-				"name": "notaContenido",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "grupoNum",
-				"type": "uint256"
-			},
-			{
-				"name": "nota",
-				"type": "uint256"
-			}
-		],
-		"name": "calificarGrupo",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "nombre",
-				"type": "string"
-			},
-			{
-				"name": "padron",
-				"type": "uint256"
-			}
-		],
-		"name": "registrarAlumno",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"constant": true,
 		"inputs": [],
-		"name": "verDireccionMoneda",
+		"name": "name",
 		"outputs": [
 			{
 				"name": "",
-				"type": "address"
+				"type": "string"
 			}
 		],
 		"payable": false,
@@ -94,63 +14,24 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [],
-		"name": "obtenerInformacion",
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_spender",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "approve",
 		"outputs": [
 			{
-				"name": "nombre",
-				"type": "string"
-			},
-			{
-				"name": "padron",
-				"type": "uint256"
-			},
-			{
-				"name": "grupo",
-				"type": "uint256"
-			},
-			{
-				"name": "nota",
-				"type": "uint256"
+				"name": "success",
+				"type": "bool"
 			}
 		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "grupoNum",
-				"type": "uint256"
-			},
-			{
-				"name": "nota",
-				"type": "uint256"
-			}
-		],
-		"name": "calificarContenido",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "padron",
-				"type": "uint256"
-			},
-			{
-				"name": "numeroDeGrupo",
-				"type": "uint256"
-			}
-		],
-		"name": "agregarAlGrupo",
-		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -158,11 +39,11 @@
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "verDireccionContrato",
+		"name": "totalSupply",
 		"outputs": [
 			{
 				"name": "",
-				"type": "address"
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -170,9 +51,218 @@
 		"type": "function"
 	},
 	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "transferFrom",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
 		"inputs": [],
+		"name": "decimals",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"name": "balance",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "symbol",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "transfer",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_spender",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			},
+			{
+				"name": "_extraData",
+				"type": "bytes"
+			}
+		],
+		"name": "approveAndCall",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_owner",
+				"type": "address"
+			},
+			{
+				"name": "_spender",
+				"type": "address"
+			}
+		],
+		"name": "allowance",
+		"outputs": [
+			{
+				"name": "remaining",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "initBalance",
+				"type": "uint256"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "symbol",
+				"type": "string"
+			}
+		],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "constructor"
+	},
+	{
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "Transfer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_owner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "_spender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "Approval",
+		"type": "event"
 	}
 ]
